@@ -14,7 +14,7 @@ public class PrintListFromTailToHead {
 
     }
 }
-class SolutionForPrintListFromTailToHead {
+class SolutionOfPrintListFromTailToHead {
     public List<Integer> printListFromTailToHead (ListNode listNode) {
         Stack<Integer> stack = new Stack<Integer>();
         while (listNode != null) {
