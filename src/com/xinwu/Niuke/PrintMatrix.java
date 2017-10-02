@@ -1,7 +1,6 @@
 package com.xinwu.Niuke;
 
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * 功能：
