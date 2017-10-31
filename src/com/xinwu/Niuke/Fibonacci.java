@@ -8,9 +8,9 @@ package com.xinwu.Niuke;
 public class Fibonacci {
     public static void main(String[] args) {
         SolutionOfFibonacci solutionOfFibonacci = new SolutionOfFibonacci();
-        for (int i=0; i<=30; i++)
+        for (int i=1; i<=30; i++)
         {
-            System.out.println(solutionOfFibonacci.answer(i));
+            System.out.println(solutionOfFibonacci.answer2(i));
         }
     }
 }
@@ -31,6 +31,15 @@ class SolutionOfFibonacci {
                 b = c;
             }
             return c;
+        }
+    }
+
+    //递归方法
+    public int answer2(int n) {
+        if (n==1 || n==2) {
+            return 1;
+        } else {
+            return answer2(n-1) + answer2(n-2);
         }
     }
 }
